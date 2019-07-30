@@ -1,6 +1,5 @@
 package cn.ahaogg.web;
 
-import cn.ahaogg.domain.Machine;
 import cn.ahaogg.domain.User;
 import cn.ahaogg.service.MachineService;
 import cn.ahaogg.service.UserService;
@@ -23,7 +22,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -55,12 +53,12 @@ public class UserServlet extends BaseServlet{
             session.setAttribute("user",user);
             String id = session.getId();
             Cookie cookieid = new Cookie("JSESSIONID",id);
-            cookieid.setMaxAge(60*60*10);
+            cookieid.setMaxAge(60*10);
             cookieid.setPath(request.getContextPath());
             //cookie 携带Email 返回
             Cookie cookie = new Cookie("user_email",userEmail);
             //生命周期
-            cookie.setMaxAge(60*10);
+            cookie.setMaxAge(60*60*10);
             //携带路径 为前项目下
             cookie.setPath(request.getContextPath());
             //返回user部分信息给安卓端
