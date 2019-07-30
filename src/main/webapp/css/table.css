@@ -1,0 +1,147 @@
+		body {
+		    padding: 0;
+		    background: url("../images/mac_bg.png.jpg") no-repeat top center;
+		}
+
+li {
+    list-style-type: none;
+}
+.table1 { width: 70%;margin: 0 auto; }
+.table1 th {
+    background: #6f7e95;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    border-right: 1px solid rgb(170, 170, 170);
+    border-top: 1px solid rgb(170, 170, 170);
+    border-bottom: 1px solid rgb(170, 170, 170);
+    font-size: 14px;
+    margin-right: 10px;
+    color:#fff;
+}
+
+.table1 td {
+    text-align: center;
+    border-right: 1px solid rgb(170, 170, 170);
+    border-bottom: 1px solid rgb(170, 170, 170);
+    height: 40px;
+    background:#fff;
+}
+
+.table1 th:nth-child(1),
+.table1 td:nth-child(1) {
+    border-left: 1px solid rgb(170, 170, 170);
+    width: 70px;
+}
+
+.table1 th:nth-child(2),
+.table1 td:nth-child(2) {
+    width: 230px;
+}
+
+.table1 th:nth-child(3),
+.table1 td:nth-child(3) {
+    width: 230px;
+}
+
+.table1 th:nth-child(4),
+.table1 td:nth-child(4) {
+    width: 230px;
+}
+
+.table1 th:nth-child(5),
+.table1 td:nth-child(5) {
+    width: 230px;
+}
+
+.table1 th:nth-child(6),
+.table1 td:nth-child(6) {
+    width: 230px;
+}
+
+.table1 th:nth-child(7),
+.table1 td:nth-child(7) {
+    width: 230px;
+}
+
+.table1 th:nth-child(8),
+.table1 td:nth-child(8) {
+    width: 200px;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+    margin-left:10px;
+}
+
+.con_left {
+    float: left;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.maohao {
+    margin: 0 5px;
+}
+
+input,select {
+    width: 120px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.head_btn {
+    background: rgb(1, 93, 178);
+    color: white;
+    width: 60px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 80px;
+}
+
+.flex-item {
+    margin-top: 35px;
+}
+
+.input {
+    width: 14px;
+    height: 14px;
+}
+
+#pageStyle {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #CCC;
+    line-height: 32px;
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+#pageStyle:hover {
+    background-color: #CCC;
+}
+
+#pageStyle .active {
+    background-color: #0CF;
+    color: #ffffff;
+}
+.footer {margin-left: 10px;}
+.container { height: 100%;margin:0 auto;}
+.sbpay,.zhanghuyue{background-color: #fff;border: 1px solid rgb(169, 169, 169);}
+@media only screen and (max-width:1500px){
+    .footer {margin-top: 10px;}
+    .flex-item {margin-top: 30px;}
+}
+.head_btn:active { color: rgb(1,93,178); }

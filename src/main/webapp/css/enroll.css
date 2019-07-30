@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* font define */
+@font-face
+{
+	font-family: hoberFont;
+	src: url("../fonts/hober.ttf");
+}
+
+/* class define */
+.pos-rel { position: relative; }
+.pos-abs { position: absolute; }
+
+.container { margin: 0 auto;width: 80%;height: 100%;text-align: center; }
+.float-left { float: left;width: 15%;height: 100%;  }
+.float-right { float: right;width: 15%;height: 100%; }
+.logo { position: relative;top: 25%;height: 50%; }
+.head-word { position: relative;top: 40%;font-size:2.6rem;color: #BBB; }
+.invisible { height: 6%;visibility: hidden; }
+
+.user-input { margin: 6px 0;padding: 5px 8px;box-sizing: border-box;display: block;width: 100%;font-size: 1.4rem;border: 1px groove #EEE; }
+.user-label { display: block;font-size: 1.4rem; }
+.user-label:not(:first-child) { margin-top: 10px; }
+.select { margin: 6px 0;padding: 4px 6px;box-sizing: border-box;display: block;border: 1px solid #DDD; }
+.submit { margin: 7.5% auto 0 auto;padding: 5px 0;box-sizing: border-box;display: block;width: 100%;font-size: 2.2rem;color: rgb(250,250,250);letter-spacing: 2px;background-color: #94A4AE;border-width: 0;border-radius: 16px; }
+.submit:visited { background-color: #BF6B47; }
+.submit:hover { background-color: #368580; }
+input:hover { box-shadow: 0 0 2px 1px #F9F900; }
+input[type="submit"] { box-shadow: 0 0; }
+.foot-a { color: #AAA; }
+.foot-a:hover { color: #a0ce4e; }
+.foot-a::selection { color: #0FC1DD;background: #EEE; }
+.content { height: 66%; }
+/* id define */
+#wrapper { height: 100%;background-color: #EEE;overflow: hidden; }
+#header { height: 12%;background-color: rgba(255,255,255,0.8);box-shadow: 0 0 3px 1px #888; }
+#main { margin: 0 auto;width: 30%;height: 100%;max-width: 480px;max-height: 520px;min-width: 400px;min-height: 460px;background-color: #FFF;border-radius: 28px;box-shadow: 0 0 8px 2px #AAA; }
+#footer { padding: 2%;box-sizing: border-box;height: 10%;text-align: center;color: #8c8989;background-color: rgba(255,255,255,0.8);box-shadow: 0 0 3px 1px #888; }
+#register { width: 100%;height: 100%; }
+#magic { height: 66%;animation: myMagic 4s linear infinite alternate; }
+/* selection define */
+.head-word::selection { background-color: transparent;color: #87CEDA; }
+input::-webkit-input-placeholder {
+	color: #BEBEBE;font-size: 13px;
+}
+input::-moz-placeholder {
+	color: #BEBEBE;font-size: 13px;
+}
+input:-moz-placeholder {
+	color: #BEBEBE;font-size: 13px;
+}
+input:-ms-input-placeholder {
+	color: #BEBEBE;font-size: 13px;
+}
+/* animation define */
+@keyframes myMagic
+{
+	from { transform: translateY(0px); }
+	to { transform: translateY(-10px); }
+}

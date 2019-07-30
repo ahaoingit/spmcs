@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" href="css/setting.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<Script type="text/javascript" src="js/jquery-1.12.4.min.js"></Script>
+<script type="text/javascript" src="js/setting.js" async></script>
+</head>
+
+<body>
+	<div id="header">
+		<img src="images/setting_home.png" alt="">
+		<span> Current Location : Setting</span>
+	</div>
+	<div class="main">
+		<form method="post" id="form-set" name="form-set"></form>
+		<div class="data-div">
+			<i class="fa fa-arrow-circle-right"></i>
+			<span>Work Hours : </span>
+			<input type="time" name="" value="" class="" form="form-set" required><span>&nbsp;To&nbsp;</span>
+			<input type="time" name="" value="" form="form-set" required>
+			<i class="fa fa-calendar"></i>
+			<span style="margin-left: 30px">Hybrid/Stop Mixing/Stopping Parameters : </span>
+			<input type="number" name="" value="" class="input-3x" placeholder="25 ~ 60 Hz" max="60" min="25" form="form-set" required>
+			<i class="fa fa-"></i>
+		</div>
+		<div class="data-div clear">
+			<i class="fa fa-toggle-off flt-left">&nbsp;</i>
+			<span class="flt-left">Dry Sampling Test : </span>
+			<input type="checkbox" name="" value="" class="choose-input" id="dry_switch">
+			<label for="dry_switch" class="choose-label flt-left" id="dry_switch"></label>
+			<div id="set-test">
+			<span style="margin-left: 30px">Detection Current&nbsp;:&nbsp;</span>
+			<input type="number" class="input-3x" name="" value="" max="255" min="1" placeholder="0 ~ 255 A" form="form-set">
+			<span style="margin-left: 20px">Protection Time&nbsp;:&nbsp;</span>
+			<input type="number" class="input-2x" name="" value="" max="60" min="5" placeholder="5 ~ 60" form="form-set">
+			</div>
+		</div>
+		<div class="data-div clear">
+			<i class="fa fa-toggle-off flt-left">&nbsp;</i>
+			<span class="flt-left">Water Tower Sensor Functional Switch : </span>
+			<input type="checkbox" name="" value="" class="choose-input" id="tower_switch" form="form-set">
+			<label for="tower_switch" class="choose-label flt-left"></label>
+			<span class="flt-left" style="margin-left: 30px">Water Well Sensor Functional Switch : </span>
+			<input type="checkbox" name="" value="" class="choose-input" id="well_switch" form="form-set">
+			<label for="well_switch" class="choose-label flt-left"></label>
+		</div>
+		<div class="data-div clear">
+			<i class="fa fa-arrow-circle-right"></i>
+			<span>Output Maximum Frequency : </span>
+			<input type="number" name="" class="input-3x" value="" max="60" min="25" placeholder="25 ~ 60 Hz" form="form-set">
+			<span style="margin-left: 30px">Output Voltage Selection : </span>
+			<select name="" form="form-set" class="data-select input-2x">
+				<option disabled>-Please Choose-</option>
+				<option value="220">220V</option>
+				<option value="240">240V</option>
+				<option value="380">380V</option>
+				<option value="400">400V</option>
+				<option value="440">440V</option>
+			</select> <i class="fa fa-bolt"></i>
+		</div>
+		<div class="clear" style="background-color: #F8F8F8;color: #666;font-size: 17px;">
+			<!--设置菜单密码form-->
+			<form method="post">
+				<i class="fa fa-angle-double-right"></i>
+				<label for="menu_password">Set Menu-Password : </label>
+				<input type="text" class="input-3x" name="menu_password" maxlength="18" style="box-sizing: border-box;padding: 2px 5px;border-radius: 6px;border: 1px solid #666" placeholder="New Menu-Password">
+				<input type="button" class="set-btn input-2x" value="Submit">
+			</form>
+		</div>
+		<div style="margin: 20px 0;">
+			<form method="get">
+				<i class="fa fa-clock-o"></i>
+				<label for="set_date">Time Calibration : </label>
+				<input type="datetime-local" style="width: 160px;border-radius: 5px;border: 1px solid #888" form="form-set">
+				<input type="button" class="set-btn input-2x" value="Set Time">
+			</form>
+		</div>
+		<div class="data-div">
+			<i class="fa fa-navicon"></i>
+			<label for="Ac-select">AC Output Phase Number Selection : </label>
+			<select form="form-set" name="" class="data-select l" id="Ac-select">
+				<option value="0">3Phase</option>
+				<option value="1">Single Phase</option>
+			</select>
+			<label for="Ac-set" style="margin-left: 30px">AC Output Forward and Backward Settings : </label>
+			<select form="form-set" name="" class="data-select" id="Ac-set">
+				<option value="0">Rotation</option>
+				<option value="1">Reversal</option>
+			</select>
+		</div>
+		<div class="data-div">
+			<i class="fa fa-telegram"></i>
+			<label for="Mppt-mode">MPPT Tracking Mode : </label>
+			<select form="form-set" name="" class="data-select" id="mppt-mode">
+				<option value="0">Automatic</option>
+				<option value="1">PI</option>
+			</select>
+			<i class="fa fa-usb" style="margin-left: 60px">PI Tracking Voltage : </i>
+			<input type="text" class="input-3x" name="" value="" form="form-set" placeholder="---V">
+		</div>
+		<div class="data-div">
+			<i class="fa fa-maxcdn"></i>
+			<span>Machine Output Maximum Current : </span>
+			<input type="text" name="" class="input-3x" value="" form="form-set" placeholder="---A">
+		</div>
+		<div class="data-div">
+			<i class="fa fa-warning"></i>
+			<span>Restore Factory Settings : </span>
+			<input class="set-restore" type="button" value="Set Up">
+		</div>
+		<div class="data-div">
+			<i class="fa fa-thermometer-quarter"></i>
+			<span>Delay Detection of Water Level Recovery in Water Well and Tower : </span>
+			<input type="number" class="input-2x" max="60" min="5" name="" form="form-set" placeholder="5 ~ 60">
+		</div>
+		<div class="data-div">
+			<input type="submit" class="btn-sub" value="Submit" form="form-set">
+		</div>
+	</div>
+</body>
+</html>

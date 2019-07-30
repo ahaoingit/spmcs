@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+* { outline: none; }
+html,body { height: 100%;margin: 0;min-width: 760px;min-height: 600px; }
+body { background-color: #EAEAEA; }
+#header { margin-left: 2.5%;padding: 10px 0;line-height: 1.8; }
+#set-test { display: none; }
+.main { box-sizing: border-box;width: 95%;height: 90%;margin: 0 auto;padding: 30px;background-color: #FFF;box-shadow: 0 0 5px 0 #CCC; }
+.data-div { margin: 0 30px 15px 0px;height: 25px;  }
+.data-div  input { box-sizing: border-box;padding: 2px 8px;border: 1px solid #CACACA;border-radius: 5px; }
+.data-div input:hover { border-color: #AEAEAE; }
+.data-div input:focus { border-color: #AAA; }
+.data-div span,label { color: #666; }
+.flt-left { float: left; }
+.input-2x { width: 100px;height: 25px; }
+.input-3x { width: 150px;height: 25px; }
+::-webkit-input-placeholder { color: #BEBEBE; }
+:-moz-placeholder { color: #BEBEBE; }
+::-moz-placeholder { color: #BEBEBE; }
+:-ms-input-placeholder { color: #BEBEBE; }
+.choose-input { display: none; }
+.clear { clear: both;display: block; }
+.choose-label { position: relative;width: 55px;height: 25px;margin-left: 10px;background-color: #bdbdbd;border-radius: 11px;overflow: hidden; }
+.choose-label::before { content: "";position: absolute;top: 1.5px;left: 2px;width: 22px;height: 22px;background-color: #FFF;border-radius: 11px;transition: all .3s linear; }
+.choose-input:checked + .choose-label { background-color: #51ccee; }
+.choose-input:checked + .choose-label::before { left: 31px; }
+.data-select { box-sizing: border-box;color: #686868;height: 25px;padding: 2px 4px;border: 1px solid #AEAEAE;border-radius: 5px; }
+.set-btn { margin-left: 8px;padding: 5px;color: #FFF;background-color: rgba(250,80,84,1.00);border-style: none;border-radius: 10px;transition: background .2s ease;cursor: pointer; }
+.set-btn:hover { background-color: rgba(255,105,105,1.00); }
+.set-btn:active { background-color: rgb(255,60,60); }
+.set-restore { padding: 2px 5px;background: linear-gradient(to bottom,#FFF,#EEE); }
+.set-restore:hover { background: linear-gradient(to bottom,#FFF,#EEE,#EEE); }
+.btn-sub { position: relative;left: 15px;width: 260px;height: 30px;color: #FFF;letter-spacing: 2px;background-color: #01DA7B;border-style: none;cursor: pointer; }
+.btn-sub:hover { background-color: #02FA8B; }
+.btn-sub:active { background-color: #02ED80; }

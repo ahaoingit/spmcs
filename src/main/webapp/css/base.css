@@ -1,0 +1,20 @@
+* {
+	margin: 0 ;
+	padding: 0;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	list-style: none;
+	text-decoration: none;
+}
+html,body {
+	height: 100%;
+	min-width: 600px;
+	min-height: 480px;
+	color: #333;
+}
+a {
+	color: #337ab7;
+}
+a:hover {
+	text-decoration: underline;
+}

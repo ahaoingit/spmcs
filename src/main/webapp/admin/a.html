@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var dom = document;
+    function $(id){ return dom.getElementById(id); }
+    function $$(className){ return dom.getElementsByClassName(className); }
+</script>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#loginbutt").click(function(){
+            var param = $("#loginform").serialize();
+            $.post(
+                "/spmcs/adminservlet",
+                param,
+                function (data) {
+                    if (data.code == 1) {
+                        //要加载主页
+                        location.href="/spmcs/index.jsp";
+                    }else {
+                        //要填充到span里
+                        $("#errorspan").css({color:"red"});
+                        $("#errorspan").html("email or password is incorrect");
+                    }
+                },"json"
+            );
+        });
+    });
+</script>
+<form method="post" id="loginform">
+    <input type="hidden" name="method" value="login">
+    <span id="errorspan"></span>
+    email:<input type="text" name="admin_email">
+    password: <input type="password" name="admin_pwd">
+    <input type="button" value="login" id="loginbutt">
+</form>
+</body>
+</html>

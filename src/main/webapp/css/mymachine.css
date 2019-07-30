@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0;padding: 0;outline: none; }
+html,body { background: url("../images/mac_bg.png.jpg") repeat-y top center;font-size: "courier" 10px;overflow: auto; }
+a { color: inherit;text-decoration: none; }
+.pos-rel{ position: relative; }
+.container { width: 92%;margin: 33px auto;border: 1px solid #666;overflow: hidden;border-radius: 16px;box-shadow: 0 0 6px #AAA; }
+.hidden { height: 28px;visibility: hidden;clear: both; }
+.content-head { box-sizing: border-box;height: 42px;padding: 10px 50px 0 66px;font-size: 18px;color: #686868;background: aliceblue url("../ui/Microsoft.png") no-repeat 12px center;border-bottom: 1px solid #888; }
+.content-head > .date-span { margin: 0 42px 0 12px; }
+.content-main { padding: 15px 10px;background-color: #FFF; }
+.info { float: left;box-sizing: border-box;width: 30%;min-width: 320px;margin: 1.4%;background: url("../ui/rss.png") no-repeat 95% 6px;background-origin: padding-box;overflow: hidden;box-shadow: 0 0 6px 0 #888;border-radius: 18px }
+.info-left { float: left;width: 35%;padding: 8px 0;text-align: center; }
+.info-right{ float: right;box-sizing: border-box;width: 65%;padding-left: 5px;text-align: center;text-align: left; }
+.info-head { box-sizing: border-box;padding: 8px 16px 0 16px;height: 38px;color: #686868;border-bottom: 1px solid #BFBFBF; }
+.info-left > img { width: 80%;min-width: 80px;border-radius: 20px }
+.info-right > span { font-size: 14px;color: #606060;line-height: 2.0; }
+.date-value { font-size: 15px;color: #565656;line-height: 2.2; }

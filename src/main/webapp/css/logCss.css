@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* font define */
+@font-face
+{
+	font-family: hoberFont;
+	src: url("../fonts/hober.ttf");
+}
+
+/* class define */
+.invisible { visibility: hidden;height: 5%;}
+.pos-rel { position: relative; }
+.pos-abs { position: absolute; }
+.head-span { font-size: 2.0rem;color: #888; }
+.head-span::selection { color: #8BC8CF;background-color:transparent; }
+.container { margin: 0 auto;width: 60%;height: 100%; }
+.logo { position: relative;top: 10%;height: 80%; }
+.log-label { margin: 6px 0;display: block;font-size: 1.5rem;color: #666; }
+.log-input { margin-bottom: 6%;padding: 8px 18px 8px 36px;display: block;box-sizing: border-box;width: 100%;font-size: 1.5rem;border-radius: 18px;border: 2px groove #DDD; }
+.flt-left { float: left;margin-left: 13%; }
+.flt-right { float: right;margin-right: 13%; }
+.user-a { font-size: 1.3rem;margin-bottom: 10%; }
+.user-a:hover { color: rgba(88,88,88,0.8);text-decoration: underline; }
+.submit { padding: 8px 0;display: block;box-sizing: border-box;width: 100%;font-size: 1.6rem;color: #888;letter-spacing: 2px;border-radius: 18px;border: 2px groove #DDD; }
+.submit:hover { color: aliceblue;background-color: #54CBC3;border-color: #EEE; }
+.foot-a { color: #AAA; }
+.foot-a:hover { color: #a0ce4e; }
+.foot-a::selection { color: #0FC1DD;background: #EEE; }
+
+/* id define */
+#wrapper { height: 100%; }
+#header { box-sizing: border-box;height: 10%;background-color: rgba(255,255,255,.08);border-bottom: 1px solid #CCC; }
+#main { height: 70%;animation: myback 16s linear infinite alternate; }
+#footer { padding: 2%;box-sizing: border-box;height: 10%;text-align: center; }
+#login { position: relative;top: 10%;margin: 0 auto;width: 26%;max-width:  428px;max-height: 468px;min-width: 360px;min-height: 388px;height: 80%;background-color: #FFF;border-radius: 25px; }
+#username { background: #FFF url("../images/user.png") no-repeat 6px center; }
+#password { background: #FFF url("../images/password.png") no-repeat 6px center; }
+
+/* animation define */
+@keyframes myback
+{
+	from { background-color: #67CEE9; }
+	50% { background-color: antiquewhite; }
+	to { background-color: #D1539F; }
+}
