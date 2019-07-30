@@ -55,7 +55,7 @@ public class UserServlet extends BaseServlet{
             session.setAttribute("user",user);
             String id = session.getId();
             Cookie cookieid = new Cookie("JSESSIONID",id);
-            cookieid.setMaxAge(60*10);
+            cookieid.setMaxAge(60*60*10);
             cookieid.setPath(request.getContextPath());
             //cookie 携带Email 返回
             Cookie cookie = new Cookie("user_email",userEmail);
